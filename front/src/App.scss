@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #56ddf5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ecb66f,
+    #56ddf5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ecb66f,
+    #56ddf5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.home-head {
+  height: 100vh;
+  margin-top: 25px;
+}
+
+.todo-container {
+  height: 80px;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.check-box {
+  // margin-left: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.input-text {
+  width: 250px;
+  padding: 8px;
+}
+
+.btn-checked {
+  background-color: rgb(134, 214, 134);
+  cursor: pointer;
+  margin: 10px;
+  width: 120px;
+  padding: 6px;
+  border-radius: 20px;
+  border: 1px solid #418581;
+}
