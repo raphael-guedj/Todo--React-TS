@@ -13,7 +13,7 @@ const ToDoListItem = () => {
   const [list, setList] = useState<ListItem[]>([]);
   const [id, setId] = useState("");
   const [text, setText] = useState("");
-  const [completed, setCompleted] = useState();
+  // const [completed, setCompleted] = useState();
 
   console.log(text);
 
@@ -96,7 +96,7 @@ const ToDoListItem = () => {
                   >
                     <Input
                       className="input-text"
-                      value={text}
+                      value={e.todo}
                       onChange={(e) => setText(e.target.value)}
                       placeholder="to do"
                     />
@@ -105,7 +105,7 @@ const ToDoListItem = () => {
                       type="checkbox"
                       checked={e.isCompleted}
                       onClick={() => {
-                        setId(i);
+                        // setId(i);
                         completeTodo();
                       }}
                       className="check-box"
